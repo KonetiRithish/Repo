@@ -1,16 +1,77 @@
 
+
 <head>
     <title>Rithish</title>
     <style>
-        h1{
-				color:white;
-			}
-    body {
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+    font-family: Arial, sans-serif;
     background-image: url("ayyapa images/Homepage.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;          /* Makes it responsive */
+    background-position: center;
 }
+
+/* Heading */
+h1 {
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 2.5rem;
+}
+
+/* Navigation Table */
+table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Table Cells */
+th {
+    background-color: gold;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+/* Links */
+th a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+/* Hover Effect */
+th a:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    table, tr, th {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        margin-bottom: 5px;
+    }
+}
+
 
     </style>
 </head>
@@ -19,7 +80,7 @@
             <table width="1235px" align="center" border="2px">
                 <tr align="center">
                     <th bgcolor="gold">
-                        <a href="Home.html">HOME</a>
+                        <a href="index.html">HOME</a>
                     </th>
                     <th bgcolor="gold">
                         <a href="image.html">IMAGES</a>
@@ -31,5 +92,7 @@
                         <a href="youtube.html">YOUTUBE</a>
                     </th>
             </table> 
+</body>
+</html>
 </body>
 </html>
