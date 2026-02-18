@@ -1,47 +1,87 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Images of ayyapa</title>
-        <style>
-         h1{
-				color:white;
-				background-color:824444;
-				border: 2px Solid Brown;
-			}
-            body{
-               background-color: antiquewhite; 
-            }
-        </style>
-    </head>
-        <body>
-            <h1 align="center" width="1220px">IMAGES OF AYYAPA POOJA</h1>
-            <table width="1245px" align="center" border="2px">
-               <tr align="center">
-                    <th bgcolor="orange">
-                        <a href="Home.html">HOME</a>
-                    </th>
-                    <th bgcolor="orange">
-                        <a href="image.html">IMAGES</a>
-                    </th>
-                    <th bgcolor="orange">
-                        <a href="video.html">VIDEO</a>
-                    </th>
-                    <th bgcolor="orange">
-                        <a href="youtube.html">YOUTUBE</a>
-                    </th>
-            </table>
-            <br>
-            <img src="ayyapa images/IMG20251116160324.png"border="3.4px"width="300px"/>
-            <img src="ayyapa images/IMG20251116160349.png"border="3.4px"width="300px"/>
-            <img src="ayyapa images/IMG20251116163302.png"border="3.4px"width="300px"/>
-            <img src="ayyapa images/IMG20251116163355.png"border="3.4px"width="300px"/>
-            <img src="ayyapa images/IMG20251117002151.png"border="3.4px"height="400px"width="300px"/>
-            <img src="ayyapa images/IMG20251117002240.png"border="3.4px"height="400px"width="300px"/>
-            <img src="ayyapa images/IMG202511161edit.png"border="3.4px"height="400px"width="300px"/>
-            <img src="ayyapa images/IMG20251116170105.png"border="3.4px"height="400px"width="300px"/>
-            <img src="ayyapa images/IMG-20251219-WA0051.jpg"border="3.4px"height="400px"width="300px"/>
-            <img src="ayyapa images/IMG-20251219-WA0031.jpg"border="3.4px"height="400px"width="300px"/>
-            <img src="ayyapa images/IMG-20251219-WA0049.jpg"border="3.4px"height="400px"width="300px"/>
-            <img src="ayyapa images/IMG-20251219-WA0053.jpg"border="3.4px"height="400px"width="300px"/>
-            <img src="ayyapa images/IMG20251117002214.png"border="3.4px"height="500px"width="1230px"/>
-        </body>
+<head>
+    <title>Images of Ayyapa</title>
+
+    <style>
+        body{
+            margin: 0;
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            background-color: #824444;
+            color: white;
+            padding: 15px;
+            margin: 0;
+        }
+
+        .navbar{
+            background-color: orange;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        /* 🔥 Auto Grid System */
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;   /* Important for correct fitting */
+            border: 3px solid brown;
+        }
+
+        /* Big Image Full Width */
+        .full-image{
+            grid-column: 1 / -1;
+            height: 400px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>IMAGES OF AYYAPPA POOJA</h1>
+
+<div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="image.html">IMAGES</a>
+    <a href="video.html">VIDEO</a>
+    <a href="youtube.html">YOUTUBE</a>
+</div>
+
+<div class="gallery">
+    <img src="ayyapa images/IMG20251116160324.png">
+    <img src="ayyapa images/IMG20251116160349.png">
+    <img src="ayyapa images/IMG20251116163302.png">
+    <img src="ayyapa images/IMG20251116163355.png">
+    <img src="ayyapa images/IMG20251117002151.png">
+    <img src="ayyapa images/IMG20251117002240.png">
+    <img src="ayyapa images/IMG202511161edit.png">
+    <img src="ayyapa images/IMG20251116170105.png">
+    <img src="ayyapa images/IMG-20251219-WA0051.jpg">
+    <img src="ayyapa images/IMG-20251219-WA0031.jpg">
+    <img src="ayyapa images/IMG-20251219-WA0049.jpg">
+    <img src="ayyapa images/IMG-20251219-WA0053.jpg">
+
+    <img src="ayyapa images/IMG20251117002214.png" class="full-image">
+</div>
+
+</body>
 </html>
