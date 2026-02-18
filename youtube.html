@@ -1,40 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>youtube</title>
-    <style>
-        h1{
-				color:white;
-				background-color:purple;
-				border: 2px saddlebrown;
-			}
-            body{
-                 background-color:lightyellow;
-                }
-    </style>
-    </head>
-    <body>
-    <h1 align="center">***YOUTUBE VIDEOS***</h1>
-     <table width="1230px" align="center" border="2px">
-                <tr align="center">
-                   <th bgcolor="white">
-                       <a href="Home.html">HOME</a>
-                    </th>
-                    <th bgcolor="white">
-                        <a href="image.html">IMAGES</a>
-                    </th>
-                    <th bgcolor="white">
-                        <a href="video.html">VIDEO</a>
-                    </th>
-                    <th bgcolor="white">
-                        <a href="youtube.html">YOUTUBE</a>
-                    </th>
-                </tr>
-            </table>
-            <br>
-    <iframe width="1230" height="310" src="https://www.youtube.com/embed/ubKtyIumSZQ?si=v9DNgXe9KENCAQ3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="1230" height="310" src="https://www.youtube.com/embed/15WEp_-3ZEQ?si=4s5wA1nlmibFe9np" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube</title>
+
+<style>
+body{
+    background-color: lightyellow;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+h1{
+    color: white;
+    background-color: purple;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Navigation */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: white;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Video Container */
+.video-container{
+    width: 95%;
+    margin: auto;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+/* 📱 Mobile Screen */
+@media (max-width: 768px){
+    iframe{
+        height: 220px;
+    }
+
+    th{
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>***YOUTUBE VIDEOS***</h1>
+
+<table border="2">
+<tr align="center">
+<th><a href="index.html">HOME</a></th>
+<th><a href="image.html">IMAGES</a></th>
+<th><a href="video.html">VIDEO</a></th>
+<th><a href="youtube.html">YOUTUBE</a></th>
+</tr>
+</table>
+
+<br>
+
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/ubKtyIumSZQ" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/15WEp_-3ZEQ" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/FZSQM6l_8m8?si=k8V0yxY2_3LWqJxe" allowfullscreen></iframe>
+</div>
+
 </body>
 </html>
