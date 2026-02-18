@@ -1,53 +1,114 @@
 <!DOCTYPE html>
+<html>
 <head>
-<title>videos of ayyapa</title>
+<title>Videos of Ayyappa</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-         h1{
-				color:white;
-				background-color:rgb(200, 54, 54);
-				border: 2px Solid Brown;
-			}
-            body{
-                background-color:burlywood;
-            }
-        </style>
+
+    body{
+        background-color: burlywood;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    h1{
+        color: white;
+        background-color: rgb(200, 54, 54);
+        border: 2px solid brown;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* Navigation */
+    .nav{
+        display: flex;
+        justify-content: center;
+        background-color: gold;
+        flex-wrap: wrap;
+    }
+
+    .nav a{
+        padding: 12px 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav a:hover{
+        background-color: brown;
+        color: white;
+    }
+
+    /* Video Container */
+    .video-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    video{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px){
+        h1{
+            font-size: 18px;
+        }
+
+        .nav a{
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+
+</style>
 </head>
+
 <body>
-       <h1 align="center" width="800px">~~*VIDEOS OF AYYAPPA POOJA*~~</h1>
-       <table width="1235px" align="center" border="1.5px">
-                <tr align="center">
-                    <th bgcolor="gold">
-                        <a href="Home.html">HOME</a>
-                    </th>
-                    <th bgcolor="gold">
-                        <a href="image.html">IMAGES</a>
-                    </th>
-                    <th bgcolor="gold">
-                        <a href="video.html">VIDEO</a>
-                    </th>
-                    <th bgcolor="gold">
-                        <a href="youtube.html">YOUTUBE</a>
-                    </th>
-            </table>
-            <table>
-    <video width="405" height="210" controls>
+
+<h1>~~*VIDEOS OF AYYAPPA POOJA*~~</h1>
+
+<div class="nav">
+    <a href="index.html">HOME</a>
+    <a href="image.html">IMAGES</a>
+    <a href="video.html">VIDEO</a>
+    <a href="youtube.html">YOUTUBE</a>
+</div>
+
+<div class="video-container">
+    <video controls>
         <source src="ayyapa videos/VID20251116210710.mp4" type="video/mp4">
     </video>
-    <video width="410" height="240" controls>
+
+    <video controls>
         <source src="ayyapa videos/VID20251116210850.mp4" type="video/mp4">
     </video>
-    <video width="410" height="240" controls>
+
+    <video controls>
         <source src="ayyapa videos/VID20251116211149.mp4" type="video/mp4">
     </video>
-    <video width="410" height="191" controls>
+
+    <video controls>
         <source src="ayyapa videos/VID20251116214305.mp4" type="video/mp4">
     </video>
-    <video width="405" height="205" controls>
+
+    <video controls>
         <source src="ayyapa videos/VID20251116214529.mp4" type="video/mp4">
     </video>
-    <video width="410" height="191" controls>
+
+    <video controls>
         <source src="ayyapa videos/VID20251116215712.mp4" type="video/mp4">
     </video>
-    </table>
+</div>
+
 </body>
 </html>
