@@ -1,98 +1,100 @@
-
-
+<!DOCTYPE html>
+<html>
 <head>
     <title>Rithish</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-       * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Body Background */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url("ayyapa images/Homepage.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;          /* Makes it responsive */
-    background-position: center;
-}
+        /* Body Background for Laptop */
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-image: url("ayyapa images/Homepage.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;   /* For Laptop */
+        }
 
-/* Heading */
-h1 {
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 2.5rem;
-}
+        /* Heading */
+        h1 {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+        }
 
-/* Navigation Table */
-table {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
+        /* Navigation Table */
+        table {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
 
-/* Table Cells */
-th {
-    background-color: gold;
-    padding: 15px;
-    border: 2px solid black;
-}
+        th {
+            background-color: gold;
+            padding: 15px;
+            border: 2px solid black;
+        }
 
-/* Links */
-th a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    display: block;
-}
+        th a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: block;
+        }
 
-/* Hover Effect */
-th a:hover {
-    background-color: orange;
-    color: white;
-}
+        th a:hover {
+            background-color: orange;
+            color: white;
+        }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem;
-    }
+        /* ✅ Mobile Screen Settings */
+        @media (max-width: 768px) {
 
-    table, tr, th {
-        display: block;
-        width: 100%;
-    }
+            body {
+                background-attachment: scroll; /* Important for Mobile */
+                background-size: cover;
+                background-position: center;
+            }
 
-    th {
-        margin-bottom: 5px;
-    }
-}
+            h1 {
+                font-size: 24px;
+            }
 
+            table, tr, th {
+                display: block;
+                width: 100%;
+            }
+
+            th {
+                margin-bottom: 5px;
+            }
+        }
 
     </style>
 </head>
+
 <body>
-    <h1 align="center">**--AYYAPPA--**</h1>
-            <table width="1235px" align="center" border="2px">
-                <tr align="center">
-                    <th bgcolor="gold">
-                        <a href="index.html">HOME</a>
-                    </th>
-                    <th bgcolor="gold">
-                        <a href="image.html">IMAGES</a>
-                    </th>
-                    <th bgcolor="gold">
-                        <a href="video.html">VIDEO</a>
-                    </th>
-                    <th bgcolor="gold">
-                        <a href="youtube.html">YOUTUBE</a>
-                    </th>
-            </table> 
-</body>
-</html>
+
+    <h1>-- AYYAPPA --</h1>
+
+    <table border="2">
+        <tr align="center">
+            <th><a href="index.html">HOME</a></th>
+            <th><a href="image.html">IMAGES</a></th>
+            <th><a href="video.html">VIDEO</a></th>
+            <th><a href="youtube.html">YOUTUBE</a></th>
+        </tr>
+    </table>
+
 </body>
 </html>
